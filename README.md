@@ -5,10 +5,6 @@ Given that I plan to use it on environments in which the state is only a vector 
 
 Anyway, it performs well enough on environments such as `Acrobot-v1` and `LunarLander-v2` and may be a good starting point for anyone who wishes to improve on it. 
 
-![CartPole-perf](./runs/CartPole-v0.png)
-![LunarLander-perf](./runs/LunarLander-v2.png)
-![Acrobot-perf](./runs/Acrobot-v1.png)
-
 ## How to use: 
 
 To train an agent, run: 
@@ -21,3 +17,11 @@ To see the agent perform:
 ```bash
 python enjoy.py --env LunarLander-v2
 ```
+
+## Performances
+
+![CartPole-perf](./runs/CartPole-v0/reward.png)
+
+![LunarLander-perf](./runs/LunarLander-v2/reward.png)
+
+![Acrobot-perf](./runs/Acrobot-v1/reward.png)
