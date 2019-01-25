@@ -35,3 +35,5 @@ for ep in tqdm(range(10)):
         env.render()
         if not args.env.startswith('Lunar'): 
            time.sleep(0.02) 
+
+env.close()
