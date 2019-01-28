@@ -5,6 +5,8 @@ import random
 from argparse import ArgumentParser 
 import os 
 
+import pandas as pd 
+
 import matplotlib.pyplot as plt 
 plt.style.use('ggplot')
 from scipy.ndimage.filters import gaussian_filter1d
@@ -35,6 +37,8 @@ def save(agent, rewards, args):
     plt.ylabel('Cumulative reward')
     plt.title('Double DQN: {}'.format(args.env))
     plt.savefig(os.path.join(path, 'reward.png'))
+
+    pd.DataFrame(rewards, columns = ['Reward']).to_csv(os.path.join(path, 'rewards.csv'), index = False)
 
 
 

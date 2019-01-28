@@ -1,4 +1,4 @@
-#Double Deep Q-Learning 
+# Double Deep Q-Learning 
 
 This repo holds an implementation of a PyTorch version of Double Deep Q-Learning. I tried to make this implementation as clear and minimal as possible. 
 Given that I plan to use it on environments in which the state is only a vector (not an image), the implementation doesn't cover the pre-processing of an image nor does it use the frame stacking wrappers that usually goes with the Atari games. 
